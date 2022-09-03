@@ -1,4 +1,6 @@
-export const Table = ({ data }) => {
+import React from "react";
+
+const Table = ({ data }) => {
   return (
     <table>
       <tr>
@@ -17,8 +19,4 @@ export const Table = ({ data }) => {
   );
 };
 
-export const fileContents = require("../scripts/recommended.js");
-
-hello
-
-<Table data={fileContents.rules} />
+export default Table;
