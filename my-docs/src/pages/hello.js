@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import { ObjectFlags } from "typescript";
 
 const data = {
   "import/no-unresolved": "error",
