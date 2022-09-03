@@ -1,0 +1,21 @@
+export const Table = ({ data }) => {
+  <table>
+    <tr>
+      <th>Rule</th>
+      <th>Error</th>
+      <th>Warning</th>
+    </tr>
+    {Object.entries(data).map(([rule, error]) => (
+      <tr>
+        <td>{rule}</td>
+        <td>{error === "error" ? "✅" : "-"}</td>
+        <td>{error === "warn" ? "✅" : "-"}</td>
+      </tr>
+    ))}
+  </table>;
+};
+const fileContents = require(options.path);
+
+<!-- AUTO-GENERATED-CONTENT:START (RENDERDOCS:path=./recommended.js) -->
+<Table data={fileContents} />
+<!-- AUTO-GENERATED-CONTENT:END *-->
